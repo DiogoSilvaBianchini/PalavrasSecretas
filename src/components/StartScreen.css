@@ -1,0 +1,15 @@
+.StartScreen{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.StartScreen h2{
+    font-size: 2em;
+}
+
+.StartScreen p{
+    margin-bottom: 2em;
+    color: #ecfa00
+}

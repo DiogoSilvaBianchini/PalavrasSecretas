@@ -1,0 +1,12 @@
+.Container_GameOver{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container_GameOver h1{
+    color: red;
+}

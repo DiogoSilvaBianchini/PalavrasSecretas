@@ -1,0 +1,122 @@
+.game{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.info p{
+    margin: 0 25px;
+}
+.life{
+    color: green;
+}
+
+.mindleLife{
+    color: yellow; 
+    animation: middlwLife 3s infinite;
+}
+
+.lowLife{
+    color: red;
+    animation: lowLife 1s infinite;
+    transition: .4s;
+}
+
+@keyframes lowLife {
+    0%{
+        color: red;
+        transform: scale(1);
+    }25%{
+        color: rgb(177, 18, 18);
+    }50%{
+        color: rgb(107, 19, 19);
+        transform: scale(1.2);
+    }100%{
+        color: red;
+        transform: scale(1);
+    }
+}
+
+@keyframes middlwLife {
+    0%{
+        color: #ffff00;
+        transform: scale(1);
+    }25%{
+        color: #b4b412;
+    }50%{
+        color: #797911;
+        transform: scale(1.1);
+    }100%{
+        color: #ffff00;
+        transform: scale(1);
+    }
+}
+
+.containerWord{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 50px;
+}
+
+.containerWord span{
+    border: 1px solid #fff;
+    width: 40px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form{
+    width: 250px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.form input{
+    width: 1em;
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.tentativas{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.certo{
+    border: 1px solid #fff;
+    width: 40px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.errado{
+    border: 1px solid #fff;
+    width: 40px;
+    height: 1em;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: transparent;
+}
